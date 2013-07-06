@@ -1,0 +1,66 @@
+doctype
+html
+  head
+    title Atom Sign
+    link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"
+    link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css"
+    /![if lt IE 8]
+      | <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  body.bp.two-col
+    div
+      #container
+        #header
+          ul.nav
+            li
+              a href="http://blog.atomsign.net"
+            li
+              a href="about.html"
+        #content
+          .span-8
+            h1.title Atom Sign
+            dl
+              dt
+                a href="http://blog.atomsign.net"
+              dd Technically blogging
+              dt
+                a href="http://twitter.com"
+              dd Sporadic rambling of a feathered follower, from Dickinson's "Hope is the thing with feathers"
+              dt
+                a href="http://www.github.com/alanjcfs"
+              dd My fledgling contributions
+          .span-8.last
+            p This is my page.
+        #sidebar
+          p
+            | I lost a World &mdash; the other day!
+            br
+              | Has Anybody found?
+              br
+                | You'll know it by the Row of Stars
+                br
+                  | Around its forehead bound.
+                  br
+                    br
+                      | A Rich man &mdash; might not notice it &mdash;
+                      br
+                        | Yet &mdash; to my frugal Eye,
+                        br
+                          | Of more Esteem than Ducats &mdash;
+                          br
+                            | Oh find it &mdash; Sir &mdash; for me!
+          p &nbsp;&nbsp; &mdash; Emily Dickinson
+    /! Google Analytics
+    javascript:
+      | var _gaq = _gaq || [];
+      | _gaq.push(['_setAccount', 'UA-2331179-5']);
+      | _gaq.push(['_setDomainName', 'atomsign.net']);
+      | _gaq.push(['_trackPageview']);
+      
+      | (function() {
+        | var ga = document.createElement('script'); ga.type =
+        | 'text/javascript'; ga.async = true;
+        | ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+          | 'http://www') + '.google-analytics.com/ga.js';
+        | var s = document.getElementsByTagName('script')[0];
+        | s.parentNode.insertBefore(ga, s);
+      | })();
