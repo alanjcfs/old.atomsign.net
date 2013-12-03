@@ -81,3 +81,11 @@ body.bp {
   }
 }*/
 
+.blinkity {
+    animation: blink 1s steps(5, start) infinite;
+}
+@keyframes .blinkity {
+    to {
+        visibility: hidden;
+    }
+}
