@@ -1751,3 +1751,14 @@ body.bp {
     list-style-type: none;
   }
 }*/
+/* line 84, ../sass/screen.scss */
+.blinkity {
+  animation: blink 1s steps(4, start) infinite;
+}
+
+@keyframes blink {
+  /* line 88, ../sass/screen.scss */
+  to {
+    visibility: hidden;
+  }
+}
