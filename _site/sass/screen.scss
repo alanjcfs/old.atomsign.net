@@ -1,83 +1,183 @@
 // This import applies a global reset to any page that imports this stylesheet.
-@import "blueprint/reset";
+// $default-background-size: 100% auto;
+// $grid-background-column-color: #000; // rgba(100, 100, 225, 0.24);
+// $grid-background-total-columns: 24;
+// $show-grid-background: true;
 
-// To configure blueprint, edit the partials/base.sass file.
-@import "partials/base";
+// $base-font-size: 16px;
+// $base-line-height: 24px;
 
-// Import all the default blueprint modules so that we can access their mixins.
+$blueprint-grid-column: 24;
+$blueprint-grid-width: 30px;
+$normal:  #00a;
+$hover:   #00f;
+$active:  #0ff;
+$visited: #a0a;
+$focus:   #000;
+
+// @import "compass/reset";
+// @import "compass";
+// @import "compass/layout";
 @import "blueprint";
-
-// Import blueprint/buttons and blueprint/link_icons
 @import "blueprint/buttons";
-@import "blueprint/link-icons";
-
-// Import the non-default scaffolding module.
-@import "blueprint/scaffolding";
-@import "compass/typography/links/hover-link";
-@import "compass/typography/lists/inline-block-list";
-
-// To generate css equivalent to the blueprint css but with your
-// configuration applied, uncomment:
+@import "compass/utilities/general/float";
 @include blueprint;
 
-$blueprint-font-family: "Open Sans", Optima, sans-serif;
-
-// If you are doing a lot of stylesheet concatenation, it is suggested
-// that you scope your blueprint styles, so that you can better control
-// what pages use blueprint when stylesheets are concatenated together.
-body.bp {
-  @include blueprint-typography(true);
-  @include blueprint-utilities;
-  @include blueprint-debug;
-  @include blueprint-interaction;
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+body {
+  margin: 8px;
+  font-family: "Open Sans", Optima, sans-serif;
 }
 
-form.bp {
-  @include blueprint-form;
-  // You'll probably want to remove the scaffolding once you start styling your site.
-  @include blueprint-scaffolding;
+.first-column {
+  background-color: #eff;
+  @include container;
+  @include column(8);
 }
 
-// Page layout can be done using mixins applied to your semantic classes and IDs:
-body.two-col {
-  #container {
-    @include container;
-  }
-  #header, #footer {
-    @include column($blueprint-grid-columns);
-  }
-  #sidebar {
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
-    @include column($sidebar-columns);
-  }
-  #content {
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    // true means it's the last column in the row
-    @include column($content-columns, true);
-  }
+.second-column {
+  background-color: #fef;
+  @include container;
+  @include column(8);
 }
 
-ul.nav {
-  @include inline-block-list;
+.third-column {
+  background-color: #ffe;
+  @include container;
+  @include column(8);
+  @include last;
 }
 
-/*h1, h2, h3, h4, h5 {
-  font-family: Open Sans, Optima, "Helvetica Neue", Helvetica, sans-serif;
+button {
+  // @include button-colors(#000, #0dd, #0ee, #0ff);
+  @include button-button(left);
+  @include button-colors;
+  @include button-hover-colors;
+  @include button-active-colors;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 250%;
+}
+
+h3 {
+  font-size: 200%;
+}
+
+h4 {
+  font-size: 150%;
+}
+
+h5 {
+  font-size: 120%;
+}
+
+h6 {
+  font-weight: bold;
 }
 
 a {
-  @include hover-link;
+  // @include hover-link;
+  @include link-colors($normal, $hover, $active, $visited, $focus);
 }
 
-body.bp {
-  ul {
-    display: inline-block;
-    list-style-type: none;
-  }
-}*/
+a.button {
+  // you can pass "left" or "right" to +anchor-button to float it in that direction
+  // or you can pass no argument to leave it inline-block (cross browser safe!) within
+  // the flow of your page.
+  @include anchor-button(left);
+  // All the button color mixins take 4 optional arguments:
+  // font color, background color, border color, border highlight color
+  // the first three default to constants set in blueprint/buttons.sass
+  // the last one defaults to a shade lighter than the border color.
+  @include button-colors;
+  @include button-hover-colors;
+  @include button-active-colors;
+}
 
+// We can change the colors for buttons of certain classes, etc.
+a.positive, button.positive {
+  color: #529214;
+  @include button-hover-colors(#529214, #e6efc2, #c6d880);
+  @include button-active-colors(white, #529214, #529214);
+}
+
+a.negative, button.negative {
+  color: #d12f19;
+  @include button-hover-colors(#d12f19, #fbe3e4, #fbc2c4);
+  @include button-active-colors(white, #d12f19, #d12f19);
+}
+
+#header {
+  @include column(24);
+  @include last;
+  .nav {
+    ul {
+    list-style: none;
+    }
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+#footer {
+  @include column(24);
+  @include last;
+}
+
+// // Page layout can be done using mixins applied to your semantic classes and IDs:
+// body {
+//   .two-col {
+//     #container {
+//       @include container;
+//     }
+//     #header, #footer {
+//       @include column($blueprint-grid-columns);
+//     }
+//     #sidebar {
+//       // One third of the grid columns, rounding down. With 24 cols, this is 8.
+//       $sidebar-columns: floor($blueprint-grid-columns / 3);
+//       @include column($sidebar-columns);
+//     }
+//     #content {
+//       // Two thirds of the grid columns, rounding up.
+//       // With 24 cols, this is 16.
+//       $content-columns: ceil(2 * $blueprint-grid-columns / 3);
+//       // true means it's the last column in the row
+//       @include column($content-columns, true);
+//     }
+//   }
+// }
+//
+// ul.nav {
+//   @include inline-block-list;
+// }
+//
+// /*h1, h2, h3, h4, h5 {
+//   font-family: Open Sans, Optima, "Helvetica Neue", Helvetica, sans-serif;
+// }
+//
+// a {
+//   @include hover-link;
+// }
+//
+// body.bp {
+//   ul {
+//     display: inline-block;
+//     list-style-type: none;
+//   }
+// }*/
+//
+// .blinkity {
+//     animation: blink 1s steps(4, start) infinite;
+// }
+// @keyframes blink {
+//     to {
+//         visibility: hidden;
+//     }
+// }
