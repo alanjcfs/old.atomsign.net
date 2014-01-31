@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /About_Me_files/
-Disallow: /Media/
-Disallow: /Scripts/
-Disallow: /Welcome_files/
