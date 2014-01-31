@@ -1,78 +1,41 @@
-doctype html
-html
+---
+layout: default
+---
 
-  head
-    title Atom Sign
-    link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"
-    link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css"
-    /![if lt IE 8]>
-      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"><![endif]
+section.content
+  #first-column.first-column
+    h1.title Atom Sign
+    dl
+      dt
+        a href="http://blog.atomsign.net" Eight-Fingered Atom
+      dd Blogging mostly about tech
+      dt
+        a href="http://twitter.com" @ajcfs
+      dd Twitter
+      dt
+        a href="http://www.github.com/alanjcfs" alanjcfs
+      dd GitHub
+      dt
+        a href="http://gnome.atomsign.net" Your Gnome
+      dd A site with Emily Dickinson's poems scraped from Wikisource
 
-  body
-    #header
-      .nav
-        ul
-          li>
-            a.button href="http://www.atomsign.net" Home
-          li>
-            a.button href="http://blog.atomsign.net" Blog
-          li>
-            a.button href="about.html" About
+  #second-column.second-column
+    h2 What I did or am doing
+    dl
+      dt
+        a href="http://www.fantravel.com" FanTravel
+      dd Current occupation, making travel easier
+      dt
+        a href="https://charm.dcara.org" DCARA Charm
+      dd Contract Project, making documentation of services easier
 
-    #first-column.first-column
-      h1.title Atom Sign
-      dl
-        dt
-          a href="http://blog.atomsign.net" Eight-Fingered Atom
-        dd Blogging mostly about tech
-        dt
-          a href="http://twitter.com" @ajcfs
-        dd Twitter
-        dt
-          a href="http://www.github.com/alanjcfs" alanjcfs
-        dd GitHub
-        dt
-          a href="http://gnome.atomsign.net" Your Gnome
-        dd A site with Emily Dickinson's poems scraped from Wikisource
-
-    #second-column.second-column
-      h2 What I did or am doing
-      dl
-        dt
-          a href="http://www.fantravel.com" FanTravel
-        dd Current occupation, making travel easier
-        dt
-          a href="https://charm.dcara.org" DCARA Charm
-        dd Contract Project, making documentation of services easier
-
-    #third-column.third-column
-      h2 What I Use
-      pre
-        |
-          {
-            "primary language" => "Ruby",  
-            "editor" => "Vim and vundle",  
-            "shell" => "Zsh",  
-            "vm" => "Vagrant with VirtualBox",  
-          }
-
-    #root
-      #root_footer
-    #footer
-      p &copy; Inspired by Others.
-
-    /! Google Analytics
-    javascript:
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-2331179-5']);
-      _gaq.push(['_setDomainName', 'atomsign.net']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type =
-        'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
-          'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
+  #third-column.third-column
+    h2 What I Use
+    pre
+      |
+        {
+          "primary language" => "Ruby",  
+          "editor" => "Vim and vundle",  
+          "shell" => "Zsh",  
+          "vm" => "Vagrant with VirtualBox",  
+        }

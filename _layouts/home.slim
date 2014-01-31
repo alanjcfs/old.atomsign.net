@@ -6,15 +6,5 @@ html
     link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css"
     /![if lt IE 8]><link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"><![endif]
   body
-    .container
-      #header
-        .nav
-          | {% slim header.slim %}
-
+    .content-wrapper
       | {{ content }}
-
-      #root
-        #root_footer
-      #footer
-        | {% slim footer.slim %}
-    | {% slim google.slim %}
