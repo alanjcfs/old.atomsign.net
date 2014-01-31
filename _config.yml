@@ -1,3 +1,9 @@
 source: .
 destination: ./_site
 plugins: ./_plugins
+exclude:
+  - index2.html
+  - adoc.*
+  - Gemfile*
+  - config.rb
+  - pry-test.rb
