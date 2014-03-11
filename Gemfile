@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-group :development do
-  gem 'compass'
-end
+gem 'compass'
 
 gem 'jekyll-slim'
+# gem 'jekyll-sass'
