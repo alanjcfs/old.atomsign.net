@@ -1,9 +1,14 @@
 source: .
 destination: ./_site
 plugins: ./_plugins
+sass:
+  style: expanded
+  deploy_style: compressed
+  compile_in_place: false
 exclude:
   - index2.html
   - adoc.*
   - Gemfile*
   - config.rb
   - pry-test.rb
+  - sass
