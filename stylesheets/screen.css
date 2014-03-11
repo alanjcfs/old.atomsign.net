@@ -1188,7 +1188,11 @@ body {
 
 /* line 31, ../sass/screen.scss */
 .first-column {
-  background-color: #eff;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #e5ffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(left top, #e5ffff, #ffffff);
+  background-image: -moz-linear-gradient(left top, #e5ffff, #ffffff);
+  background-image: -o-linear-gradient(left top, #e5ffff, #ffffff);
+  background-image: linear-gradient(left top, #e5ffff, #ffffff);
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
@@ -1203,9 +1207,13 @@ body {
   overflow-x: hidden;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .second-column {
-  background-color: #fef;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #ffe5ff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(left top, #ffe5ff, #ffffff);
+  background-image: -moz-linear-gradient(left top, #ffe5ff, #ffffff);
+  background-image: -o-linear-gradient(left top, #ffe5ff, #ffffff);
+  background-image: linear-gradient(left top, #ffe5ff, #ffffff);
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
@@ -1220,9 +1228,13 @@ body {
   overflow-x: hidden;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 .third-column {
-  background-color: #ffe;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #ffffe5), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(left top, #ffffe5, #ffffff);
+  background-image: -moz-linear-gradient(left top, #ffffe5, #ffffff);
+  background-image: -o-linear-gradient(left top, #ffffe5, #ffffff);
+  background-image: linear-gradient(left top, #ffffe5, #ffffff);
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
@@ -1238,7 +1250,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 button {
   display: inline;
   float: left;
@@ -1290,37 +1302,37 @@ button:active {
   color: white;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 h1 {
   font-size: 300%;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 h2 {
   font-size: 250%;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 h3 {
   font-size: 200%;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 h4 {
   font-size: 150%;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 h5 {
   font-size: 120%;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 h6 {
   font-weight: bold;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 a {
   color: #0000aa;
 }
@@ -1341,7 +1353,7 @@ a:active {
   color: cyan;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 a.button {
   display: inline;
   float: left;
@@ -1382,7 +1394,7 @@ a.button:active {
   color: white;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 a.positive, button.positive {
   color: #529214;
 }
@@ -1399,7 +1411,7 @@ a.positive:active, button.positive:active {
   color: white;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 a.negative, button.negative {
   color: #d12f19;
 }
@@ -1416,7 +1428,7 @@ a.negative:active, button.negative:active {
   color: white;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 #header {
   display: inline;
   float: left;
@@ -1428,16 +1440,16 @@ a.negative:active, button.negative:active {
 * html #header {
   overflow-x: hidden;
 }
-/* line 118, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 #header .nav ul {
   list-style: none;
 }
-/* line 122, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 #header .nav li {
   display: inline-block;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 #footer {
   display: inline;
   float: left;

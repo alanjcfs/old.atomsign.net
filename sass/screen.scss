@@ -29,19 +29,25 @@ body {
 }
 
 .first-column {
-  background-color: #eff;
+  // background-color: lighten(#0ff, 45%);
+  @include background-image(linear-gradient(left top, lighten(#0ff, 45%),
+  #fff));
   @include container;
   @include column(8);
 }
 
 .second-column {
-  background-color: #fef;
+  // background-color: lighten(#f0f, 45%);
+  @include background-image(linear-gradient(left top, lighten(#f0f, 45%),
+  #fff));
   @include container;
   @include column(8);
 }
 
 .third-column {
-  background-color: #ffe;
+  // background-color: lighten(#ff0, 45%);
+  @include background-image(linear-gradient(left top, lighten(#ff0, 45%),
+  #fff));
   @include container;
   @include column(8);
   @include last;
