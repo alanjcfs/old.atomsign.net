@@ -15,50 +15,73 @@ $active:  #0ff;
 $visited: #a0a;
 $focus:   #000;
 
-// @import "compass/reset";
-// @import "compass";
+@import "compass/reset";
+@import "compass";
 // @import "compass/layout";
-@import "blueprint";
-@import "blueprint/buttons";
+// @import "blueprint";
+// @import "blueprint/buttons";
 @import "compass/utilities/general/float";
-@include blueprint;
+// @include blueprint;
+@import "compass/css3/box";
 
 body {
+  position: absolute;
   margin: 8px;
   font-family: "Open Sans", Optima, sans-serif;
 }
 
-.first-column {
-  // background-color: lighten(#0ff, 45%);
-  @include background-image(linear-gradient(left top, lighten(#0ff, 45%),
-  #fff));
-  @include container;
-  @include column(8);
+// .first-column {
+//   // background-color: lighten(#0ff, 45%);
+//   @include background-image(linear-gradient(left top, lighten(#0ff, 45%),
+//   #fff));
+// }
+//
+//
+// .second-column {
+//   // background-color: lighten(#f0f, 45%);
+//   @include background-image(linear-gradient(left top, lighten(#f0f, 45%),
+//   #fff));
+// }
+//
+// .third-column {
+//   // background-color: lighten(#ff0, 45%);
+//   @include background-image(linear-gradient(left top, lighten(#ff0, 45%),
+//   #fff));
+//   background-color: #000;
+// }
+// .first-column, .second-column, .third-column {
+//   * {
+//     padding-left: 4px;
+//   }
+// }
+
+.content-body {
+  margin: 8px;
+}
+.flexbox-container {
+  @include display-box;
+
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  @include box-flex;
+  max-width: 50%;
 }
 
-.second-column {
-  // background-color: lighten(#f0f, 45%);
-  @include background-image(linear-gradient(left top, lighten(#f0f, 45%),
-  #fff));
-  @include container;
-  @include column(8);
+.item--top {
+  align-self: flex-start;
 }
-
-.third-column {
-  // background-color: lighten(#ff0, 45%);
-  @include background-image(linear-gradient(left top, lighten(#ff0, 45%),
-  #fff));
-  @include container;
-  @include column(8);
-  @include last;
+.item--bottom {
+  align-self: flex-end;
 }
 
 button {
   // @include button-colors(#000, #0dd, #0ee, #0ff);
-  @include button-button(left);
-  @include button-colors;
-  @include button-hover-colors;
-  @include button-active-colors;
+  // @include button-button(left);
+  // @include button-colors;
+  // @include button-hover-colors;
+  // @include button-active-colors;
 }
 
 h1 {
@@ -94,32 +117,32 @@ a.button {
   // you can pass "left" or "right" to +anchor-button to float it in that direction
   // or you can pass no argument to leave it inline-block (cross browser safe!) within
   // the flow of your page.
-  @include anchor-button(left);
+  // @include anchor-button(left);
   // All the button color mixins take 4 optional arguments:
   // font color, background color, border color, border highlight color
   // the first three default to constants set in blueprint/buttons.sass
   // the last one defaults to a shade lighter than the border color.
-  @include button-colors;
-  @include button-hover-colors;
-  @include button-active-colors;
+  // @include button-colors;
+  // @include button-hover-colors;
+  // @include button-active-colors;
 }
 
 // We can change the colors for buttons of certain classes, etc.
 a.positive, button.positive {
   color: #529214;
-  @include button-hover-colors(#529214, #e6efc2, #c6d880);
-  @include button-active-colors(white, #529214, #529214);
+  // @include button-hover-colors(#529214, #e6efc2, #c6d880);
+  // @include button-active-colors(white, #529214, #529214);
 }
 
 a.negative, button.negative {
   color: #d12f19;
-  @include button-hover-colors(#d12f19, #fbe3e4, #fbc2c4);
-  @include button-active-colors(white, #d12f19, #d12f19);
+  // @include button-hover-colors(#d12f19, #fbe3e4, #fbc2c4);
+  // @include button-active-colors(white, #d12f19, #d12f19);
 }
 
 #header {
-  @include column(24);
-  @include last;
+  // @include column(24);
+  // @include last;
   .nav {
     ul {
     list-style: none;
@@ -132,8 +155,8 @@ a.negative, button.negative {
 }
 
 #footer {
-  @include column(24);
-  @include last;
+  // @include column(24);
+  // @include last;
 }
 
 // // Page layout can be done using mixins applied to your semantic classes and IDs:
