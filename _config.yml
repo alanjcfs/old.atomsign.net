@@ -11,3 +11,9 @@ exclude:
   - config.rb
   - pry-test.rb
   - sass
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
