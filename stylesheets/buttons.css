@@ -1,126 +1,75 @@
-/* line 18, ../sass/buttons.scss */
-a.button {
-  display: inline;
-  float: left;
-  display: block;
-  margin: 0.7em 0.5em 0.7em 0;
-  border-width: 1px;
-  border-style: solid;
-  font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
-  font-size: 100%;
-  line-height: 130%;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 5px 10px 5px 7px;
-  background-color: whitesmoke;
-  border-color: #eeeeee #dedede #dedede #eeeeee;
-  color: #565656;
-}
-/* line 75, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-a.button img {
-  margin: 0 3px -3px 0 !important;
-  padding: 0;
-  border: none;
-  width: 16px;
-  height: 16px;
-  float: none;
-}
-/* line 62, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-a.button:hover {
-  background-color: #dff4ff;
-  border-color: #d2f1ff #c2e1ef #c2e1ef #d2f1ff;
-  color: #336699;
-}
-/* line 47, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-a.button:active {
-  background-color: #6299c5;
-  border-color: #72a9d5 #6299c5 #6299c5 #72a9d5;
-  color: white;
-}
+/*
+Error: Undefined mixin 'button-colors'.
+        on line 25 of /Users/alan/Documents/atomsign.net/sass/buttons.scss, in `button-colors'
+        from line 25 of /Users/alan/Documents/atomsign.net/sass/buttons.scss
 
-/* line 32, ../sass/buttons.scss */
-button {
-  display: inline;
-  float: left;
-  display: block;
-  margin: 0.7em 0.5em 0.7em 0;
-  border-width: 1px;
-  border-style: solid;
-  font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
-  font-size: 100%;
-  line-height: 130%;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  width: auto;
-  overflow: visible;
-  padding: 4px 10px 3px 7px;
-  background-color: whitesmoke;
-  border-color: #eeeeee #dedede #dedede #eeeeee;
-  color: #565656;
-}
-/* line 75, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-button img {
-  margin: 0 3px -3px 0 !important;
-  padding: 0;
-  border: none;
-  width: 16px;
-  height: 16px;
-  float: none;
-}
-/* line 95, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-button[type] {
-  padding: 4px 10px 4px 7px;
-  line-height: 17px;
-}
-/* line 98, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-*:first-child + html button[type] {
-  padding: 4px 10px 3px 7px;
-}
-/* line 62, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-button:hover {
-  background-color: #dff4ff;
-  border-color: #d2f1ff #c2e1ef #c2e1ef #d2f1ff;
-  color: #336699;
-}
-/* line 47, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-button:active {
-  background-color: #6299c5;
-  border-color: #72a9d5 #6299c5 #6299c5 #72a9d5;
-  color: white;
-}
+20:   // the flow of your page.
+21:   // All the button color mixins take 4 optional arguments:
+22:   // font color, background color, border color, border highlight color
+23:   // the first three default to constants set in blueprint/buttons.sass
+24:   // the last one defaults to a shade lighter than the border color.
+25:   @include button-colors;
+26:   @include button-hover-colors;
+27:   @include button-active-colors;
+28: }
+29: 
+30: button {
 
-/* line 41, ../sass/buttons.scss */
-a.positive, button.positive {
-  color: #529214;
-}
-/* line 62, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-a.positive:hover, button.positive:hover {
-  background-color: #e6efc2;
-  border-color: #d6e890 #c6d880 #c6d880 #d6e890;
-  color: #529214;
-}
-/* line 47, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-a.positive:active, button.positive:active {
-  background-color: #529214;
-  border-color: #62a224 #529214 #529214 #62a224;
-  color: white;
-}
-
-/* line 47, ../sass/buttons.scss */
-a.negative, button.negative {
-  color: #d12f19;
-}
-/* line 62, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-a.negative:hover, button.negative:hover {
-  background-color: #fbe3e4;
-  border-color: #ffd2d4 #fbc2c4 #fbc2c4 #ffd2d4;
-  color: #d12f19;
-}
-/* line 47, ../../../.gem/ruby/2.2.2/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-a.negative:active, button.negative:active {
-  background-color: #d12f19;
-  border-color: #e13f29 #d12f19 #d12f19 #e13f29;
-  color: white;
-}
+Backtrace:
+/Users/alan/Documents/atomsign.net/sass/buttons.scss:25:in `button-colors'
+/Users/alan/Documents/atomsign.net/sass/buttons.scss:25
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/alan/.gem/ruby/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/alan/.gem/ruby/2.3.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/Users/alan/.gem/ruby/2.3.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/Users/alan/.gem/ruby/2.3.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Users/alan/.gem/ruby/2.3.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/alan/.gem/ruby/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/alan/.gem/ruby/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/alan/.gem/ruby/2.3.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Users/alan/.gem/ruby/2.3.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/Users/alan/.gem/ruby/2.3.0/bin/compass:23:in `load'
+/Users/alan/.gem/ruby/2.3.0/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'button-colors'.\A         on line 25 of /Users/alan/Documents/atomsign.net/sass/buttons.scss, in `button-colors'\A         from line 25 of /Users/alan/Documents/atomsign.net/sass/buttons.scss\A \A 20:   // the flow of your page.\A 21:   // All the button color mixins take 4 optional arguments:\A 22:   // font color, background color, border color, border highlight color\A 23:   // the first three default to constants set in blueprint/buttons.sass\A 24:   // the last one defaults to a shade lighter than the border color.\A 25:   @include button-colors;\A 26:   @include button-hover-colors;\A 27:   @include button-active-colors;\A 28: }\A 29: \A 30: button {"; }

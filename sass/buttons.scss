@@ -1,5 +1,4 @@
 @import "compass/utilities/general/float";
-@import "blueprint/buttons";
 
 // Use the following HTML code to place the buttons on your site:
 //
@@ -19,7 +18,6 @@ a.button {
   // you can pass "left" or "right" to +anchor-button to float it in that direction
   // or you can pass no argument to leave it inline-block (cross browser safe!) within
   // the flow of your page.
-  @include anchor-button(left);
   // All the button color mixins take 4 optional arguments:
   // font color, background color, border color, border highlight color
   // the first three default to constants set in blueprint/buttons.sass

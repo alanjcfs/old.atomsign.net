@@ -20,8 +20,21 @@ contracting opportunities.
 Experience
 ----------
 
+**Citadel**
+San Francisco, CA, October 2016 – Present
+
+* Developed API with Grape
+
+**Gild Inc. (acquired by Citadel)**
+San Francisco, CA, October 2015 – October 2016
+*Senior Software Engineer*
+
+* Developed API with Grape
+* Wrote JavaScript
+* Migrated data from Mongo to PostgreSQL
+
 **Self-Employed**  
-San Francisco, CA, July 2014 – Present
+San Francisco, CA, July 2014 – October 2015
 *Contractor*
 
 * Develops multiple projects for Sprouts Tech, using various technologies like
