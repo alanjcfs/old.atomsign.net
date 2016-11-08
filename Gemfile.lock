@@ -20,8 +20,6 @@ GEM
       sass (>= 3.2, < 3.5)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
-    haml (4.0.7)
-      tilt
     jekyll (3.3.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -36,9 +34,6 @@ GEM
     jekyll-asciidoc (2.0.1)
       asciidoctor (>= 1.5.0)
       jekyll (>= 2.3.0)
-    jekyll-haml (0.1.4)
-      haml (>= 3.0.0)
-      jekyll (>= 0.10.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -59,15 +54,14 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
-    tilt (2.0.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   compass
+  jekyll
   jekyll-asciidoc
-  jekyll-haml
 
 BUNDLED WITH
    1.11.2

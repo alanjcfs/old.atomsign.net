@@ -1,6 +1,6 @@
 source: .
 destination: ./_site
-plugins: ./_plugins
+plugins_dir: ./_plugins
 sass:
   style: expanded
   deploy_style: compressed
@@ -17,3 +17,5 @@ defaults:
       path: ""
     values:
       layout: "default"
+gems:
+  - jekyll-asciidoc
