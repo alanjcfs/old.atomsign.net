@@ -5,12 +5,12 @@ sass:
   style: expanded
   deploy_style: compressed
   compile_in_place: false
+  sass_dir: ./css/_partials
 exclude:
   - adoc.*
   - Gemfile*
   - config.rb
   - pry-test.rb
-  - sass
 defaults:
   -
     scope:

@@ -1,13 +1,11 @@
+---
+---
 $normal:  #00a;
 $hover:   #00f;
 $active:  #0ff;
 $visited: #a0a;
 $focus:   #000;
 
-@import "compass/reset";
-@import "compass";
-@import "compass/utilities/general/float";
-@import "compass/css3/box";
 @import "resume";
 @import "twitter";
 
@@ -20,13 +18,13 @@ body {
   margin: 8px;
 }
 .flexbox-container {
-  @include display-box;
+  display: flex;
 
   align-items: center;
   justify-content: center;
 }
 .item {
-  @include box-flex;
+  box-flex: inherit;
   max-width: 50%;
 }
 
@@ -62,7 +60,6 @@ h6 {
 }
 
 a {
-  @include link-colors($normal, $hover, $active, $visited, $focus);
 }
 
 // We can change the colors for buttons of certain classes, etc.
