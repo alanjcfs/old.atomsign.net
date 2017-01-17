@@ -1,3 +1,6 @@
+---
+:page-liquid:
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +9,16 @@
 	<link href="css/print.css" media="print" rel="stylesheet" type="text/css">
 	<title>Atom Sign</title> 
 </head>
-<body class="{{ page.styling }}">
-	<div class="content-body content-wrapper">
-		<div id="header">
-			<div class="nav">
-				<li><a href="/">Home</a></li>
-				<li><a href="resume.html">Resume</a></li>
-			</div>
-			{{ content }}
-			{% include google.html %}
+<body class="home">
+	<div id="header">
+		<div class="nav">
+			<li><a href="/">Home</a></li>
+			<li><a href="resume.html">Resume</a></li>
 		</div>
 	</div>
+	<div class="content-body home-content">
+		{{ content }}
+	</div>
+	{% include google.html %}
 </body>
 </html>
