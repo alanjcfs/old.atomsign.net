@@ -1,0 +1,7 @@
+---
+layout: default
+---
+
+I like figuring out how things work.
+
+Powered by http://jekyllrb.com[Jekyll].
