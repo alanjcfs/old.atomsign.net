@@ -47,5 +47,6 @@ module.exports = {
   devServer: {
     inline: true,
     stats: { colors: true },
+    host: '0.0.0.0',
   },
 };
