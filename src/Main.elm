@@ -6,6 +6,8 @@ import Html.Events exposing (onClick)
 
 import Markdown exposing (toHtml)
 
+start = toHtml [ class "content" ] """Hello, this was written in Elm."""
+
 home = toHtml [ class "content" ]"""
 # Home
 
@@ -35,7 +37,7 @@ type alias Model =
 
 init : ( Model, Cmd Msg )
 init =
-    ( Model (toHtml [ class "content" ] """Hello, this was written in Elm."""), Cmd.none )
+    ( Model start, Cmd.none )
 
 -- MESSAGES
 
@@ -67,11 +69,11 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         Home ->
-            ( { page = home }, Cmd.none )
+            ( Model home, Cmd.none )
         School ->
-            ( { page = school }, Cmd.none )
+            ( Model school, Cmd.none )
         Work ->
-            ( { page = work }, Cmd.none )
+            ( Model work, Cmd.none )
 
 
 
