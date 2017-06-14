@@ -1,69 +1,49 @@
----
----
 $normal:  #00a;
 $hover:   #00f;
 $active:  #0ff;
 $visited: #a0a;
 $focus:   #000;
 
-@import "resume";
-@import "twitter";
+@import "reset.css";
+@import "header";
 
-body {
-  position: absolute;
-  margin: 8px;
-  font-family: "Open Sans", Optima, sans-serif;
-  width: 100%;
+@media (max-width: 1200px) {
+  html {
+    font-size: 36px;
+  }
 }
-.content-body {
-  background-color: white;
-  width: 300px;
-  height: 400px;
-  background-image: url("http://placehold.it/900x400");
-  background: no-repeat center center cover;
-}
-@media screen and (max-width: 800px) {
-  .content-body {
-    width: 100%;
+@media (min-width: 1200px) {
+  html {
+    font-size: 24px;
   }
 }
 
-.flexbox-container {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-}
-.item {
-  box-flex: inherit;
-  max-width: 50%;
-}
-
-.item--top {
-  align-self: flex-start;
-}
-.item--bottom {
-  align-self: flex-end;
+body {
+  position: absolute;
+  padding: 1em;
+  font-family: "Open Sans", Optima, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 250%;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 200%;
+  font-size: 1.25em;
 }
 
 h4 {
-  font-size: 150%;
+  font-size: 1.15em;
 }
 
 h5 {
-  font-size: 120%;
+  font-size: 1.05em;
 }
 
 h6 {
@@ -73,26 +53,6 @@ h6 {
 a {
 }
 
-// We can change the colors for buttons of certain classes, etc.
-a.positive, button.positive {
-  color: #529214;
-}
-
-a.negative, button.negative {
-  color: #d12f19;
-}
-
-#header {
-  .nav {
-    ul {
-    list-style: none;
-    }
-
-    li {
-      display: inline-block;
-    }
-  }
-}
 p {
   margin-top: 1em;
 }

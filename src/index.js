@@ -1,6 +1,6 @@
 'use strict';
 
-require('ace-css/css/ace.css');
+require('../css/screen.scss');
 // require('font-awesome/css/font-awesome.css'); // install font-awesome@4
 
 // Ensure index.html gets copied to dist
