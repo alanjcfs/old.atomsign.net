@@ -9,6 +9,7 @@ import Markdown exposing (toHtml)
 import Home exposing (home)
 import School exposing (school)
 import Work exposing (work)
+import Resume exposing (resume)
 
 -- MODEL
 
@@ -27,6 +28,7 @@ type Msg
     = Home
     | School
     | Work
+    | Resume
 
 
 
@@ -39,6 +41,7 @@ view model =
                 [ li [ onClick Home ] [ text "Home" ]
                 , li [ onClick School ] [ text "School" ]
                 , li [ onClick Work ] [ text "Work" ]
+                , li [ onClick Resume ] [ text "Resume" ]
                 ]
             ]
         , article [] [ model.page ]
@@ -56,6 +59,8 @@ update msg model =
             ( Model school, Cmd.none )
         Work ->
             ( Model work, Cmd.none )
+        Resume ->
+            ( Model resume, Cmd.none )
 
 
 
