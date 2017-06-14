@@ -1,0 +1,17 @@
+.nav {
+  li {
+    margin-left: 0.5em;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0em;
+    }
+    &:hover {
+      background-color: gold;
+    }
+  }
+}
