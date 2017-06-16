@@ -15,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
+        test: /\.(html)$/,
         exclude: /node_modules/,
         use: {
           loader: 'file-loader?name=[name].[ext]',
@@ -36,9 +36,9 @@ module.exports = {
           loader: 'url-loader?limit=10000&mimetype=application/font-woff',
         }
       }, {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(ttf|eot|svg|png|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: {
-          loader: 'file-loader',
+          loader: 'file-loader?name=[name].[ext]',
         }
       }
     ],

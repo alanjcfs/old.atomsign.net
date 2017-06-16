@@ -3,15 +3,15 @@ module Main exposing (..)
 import Html exposing (Html, div, text, program, span, ul, li, article)
 import Html.Attributes exposing (class, id)
 import Html.Events exposing (onClick)
-
 import Markdown exposing (toHtml)
-
 import Home exposing (home)
 import School exposing (school)
 import Work exposing (work)
 import Resume exposing (resume)
 
+
 -- MODEL
+
 
 type alias Model =
     { page : Html Msg
@@ -22,7 +22,10 @@ init : ( Model, Cmd Msg )
 init =
     ( Model home, Cmd.none )
 
+
+
 -- MESSAGES
+
 
 type Msg
     = Home
@@ -33,6 +36,8 @@ type Msg
 
 
 -- VIEW
+
+
 view : Model -> Html Msg
 view model =
     div []
@@ -48,30 +53,38 @@ view model =
         ]
 
 
+
 -- UPDATE
+
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         Home ->
             ( Model home, Cmd.none )
+
         School ->
             ( Model school, Cmd.none )
+
         Work ->
             ( Model work, Cmd.none )
+
         Resume ->
             ( Model resume, Cmd.none )
 
 
 
-
 -- SUBSCRIPTIONS
 
+
 subscriptions : Model -> Sub Msg
-subscriptions model = Sub.none
+subscriptions model =
+    Sub.none
+
 
 
 -- MAIN
+
 
 main : Program Never Model Msg
 main =
