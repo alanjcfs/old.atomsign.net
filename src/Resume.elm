@@ -1,11 +1,15 @@
-module Resume exposing (..)
+module Resume exposing (resume)
 
 import Html exposing(Html)
 import Html.Attributes exposing (class)
 import Markdown exposing (toHtml)
+import Model exposing (Model)
+import Msg exposing (..)
 
-resume : Html msg
-resume = toHtml [ class "content" ] """
+resume : Model
+resume = Model (toHtml [ class "content" ] text)
+
+text = """
 Alan Fung-Schwarz
 =================
 

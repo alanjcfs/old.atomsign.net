@@ -1,11 +1,15 @@
-module Work exposing (..)
+module Work exposing (work)
 
 import Html exposing(Html)
 import Html.Attributes exposing (class)
 import Markdown exposing (toHtml)
+import Model exposing (Model)
+import Msg exposing (..)
 
-work : Html msg
-work = toHtml [ class "content" ] """
+work : Model
+work = Model (toHtml [ class "content" ] text)
+
+text = """
 # Work
 
 I currently work at Citadel. The tools of the trade are Ruby on Rails for API,

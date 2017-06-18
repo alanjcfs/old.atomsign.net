@@ -3,35 +3,17 @@ module Main exposing (..)
 import Html exposing (Html, div, text, program, span, ul, li, article)
 import Html.Attributes exposing (class, id)
 import Html.Events exposing (onClick)
-import Markdown exposing (toHtml)
+import Model exposing (Model)
+import Msg exposing (..)
 import Home exposing (home)
 import School exposing (school)
 import Work exposing (work)
 import Resume exposing (resume)
 
 
--- MODEL
-
-
-type alias Model =
-    { page : Html Msg
-    }
-
-
 init : ( Model, Cmd Msg )
 init =
-    ( Model home, Cmd.none )
-
-
-
--- MESSAGES
-
-
-type Msg
-    = Home
-    | School
-    | Work
-    | Resume
+    ( home, Cmd.none )
 
 
 
@@ -61,16 +43,16 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         Home ->
-            ( Model home, Cmd.none )
+            ( home, Cmd.none )
 
         School ->
-            ( Model school, Cmd.none )
+            ( school, Cmd.none )
 
         Work ->
-            ( Model work, Cmd.none )
+            ( work, Cmd.none )
 
         Resume ->
-            ( Model resume, Cmd.none )
+            ( resume, Cmd.none )
 
 
 

@@ -1,11 +1,15 @@
-module School exposing (..)
+module School exposing (school)
 
 import Html exposing(Html)
 import Html.Attributes exposing (class)
 import Markdown exposing (toHtml)
+import Model exposing (Model)
+import Msg exposing (..)
 
-school : Html msg
-school = toHtml [ class "content" ] """
+school : Model
+school = Model (toHtml [ class "content" ] text)
+
+text = """
 
 # School
 
