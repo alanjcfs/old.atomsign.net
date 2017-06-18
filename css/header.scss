@@ -1,5 +1,12 @@
 .nav {
   font-family: 'Playfair Display SC', serif;
+  font-size: 2em;
+  height: 2em;
+  overflow-x: scroll;
+
+  ul {
+    display: flex;
+  }
 
   li {
     margin-left: 0.5em;
@@ -13,6 +20,9 @@
       margin-left: 0em;
     }
     &:hover {
+      background-color: gold;
+    }
+    &.active {
       background-color: gold;
     }
   }
