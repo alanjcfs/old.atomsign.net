@@ -9,15 +9,15 @@ import Msg exposing (..)
 home : Model
 home = Model (toHtml [ class "content" ] text)
 
-text = """
+text =
+    """
+    # Home
 
-# Home
+    Welcome to my home page.
 
-Welcome to my home page.
+    There's nothing here yet.
 
-There's nothing here yet.
+    I'm playing with [Elm](http://elm-lang.org), [Rust](https://www.rust-lang.org/en-US/),
+    and [Elixir](https://elixir-lang.org), but not all at the same time.
 
-I'm playing with [Elm](http://elm-lang.org), [Rust](https://www.rust-lang.org/en-US/),
-and [Elixir](https://elixir-lang.org), but not all at the same time.
-
-"""
+    """
