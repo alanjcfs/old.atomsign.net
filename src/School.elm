@@ -1,15 +1,8 @@
 module School exposing (school)
 
-import Html exposing(Html)
-import Html.Attributes exposing (class)
-import Markdown exposing (toHtml)
-import Model exposing (Model)
-import Msg exposing (..)
 
-school : Model
-school = Model (toHtml [ class "content" ] text)
-
-text = """
+school =
+    """
 # School
 
 I received a BA in Molecular and Cell Biology from UC Berkeley and an MS in
@@ -19,4 +12,3 @@ in different schools, with background in data structure, algorithms, and
 computer architecture, I don't have a formal degree in CS.
 
 """
-

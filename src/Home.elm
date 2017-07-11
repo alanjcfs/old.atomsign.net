@@ -1,15 +1,8 @@
 module Home exposing (home)
 
-import Html exposing(Html)
-import Html.Attributes exposing (class)
-import Markdown exposing (toHtml)
-import Model exposing (Model)
-import Msg exposing (..)
 
-home : Model
-home = Model (toHtml [ class "content" ] text)
-
-text = """
+home =
+    """
 # Home
 
 Welcome to my home page.
