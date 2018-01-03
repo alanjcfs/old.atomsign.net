@@ -22,7 +22,20 @@ module.exports = {
         }
       }, {
         test: /\.(css|scss)$/,
-        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoader: 1,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+          }
+        ]
       }, {
         test: /\.elm$/,
         exclude: [/elm-stuff/, /node_modules/],
