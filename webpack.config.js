@@ -3,7 +3,7 @@ var path = require("path");
 module.exports = {
   entry: {
     app: [
-      './src/index.js'
+      './index.js'
     ]
   },
 
@@ -15,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(html)$/,
+        test: /\.html$/,
         exclude: /node_modules/,
         use: {
           loader: 'file-loader?name=[name].[ext]',

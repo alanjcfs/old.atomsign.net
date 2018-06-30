@@ -1,6 +1,7 @@
 'use strict';
 
-import css from '../css/screen.scss';
+import css from './css/screen.scss';
+import './index.html';
 
 Vue.component('page-item', {
     props: ['page'],
