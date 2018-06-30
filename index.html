@@ -3,9 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Atomsign</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="dist/app.js"></script>
 </head>
 <body>
-	<div id="main"></div>
-	<script src="app.js"></script>
+	<div id="main">
+		<div class="nav" id="header">
+			<ul>
+				<page-item
+					v-for='page in pages'
+					v-bind:page='page'
+					v-bind:key='page.id'
+					@click.native='changeActive(page.id)'>
+				</page-item>
+			</ul>
+		</div>
+		<text-item
+			v-for='item in pages'
+			v-bind:page='item'
+			v-bind:key='item.id'
+			v-html='item.body'
+			v-if='item.id == active'>
+		</text-item>
+	</div>
 </body>
 </html>
