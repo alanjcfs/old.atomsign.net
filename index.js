@@ -1,6 +1,6 @@
 'use strict';
 
-import css from './css/screen.scss';
+import './css/screen.scss';
 import './index.html';
 
 Vue.component('page-item', {
@@ -13,7 +13,7 @@ Vue.component('text-item', {
     template: '<div>{{page.body}}</div>'
 })
 
-window.onload = function() {
+window.addEventListener('load', function() {
     new Vue({
         el: '#main',
         data: {
@@ -47,4 +47,4 @@ window.onload = function() {
             }
         }
     });
-};
+});
