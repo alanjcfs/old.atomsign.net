@@ -3,8 +3,7 @@ module Main exposing (..)
 import Html exposing (Html, div, text, program, span, ul, li, article)
 import Html.Attributes exposing (class, id)
 import Html.Events exposing (onClick)
-import Model exposing (Model)
-import Msg exposing (..)
+import Markdown exposing (toHtml)
 import Home exposing (home)
 import School exposing (school)
 import Work exposing (work)
@@ -13,7 +12,24 @@ import Resume exposing (resume)
 
 init : ( Model, Cmd Msg )
 init =
-    ( home, Cmd.none )
+    ( Model Home home, Cmd.none )
+
+
+type Msg
+    = SwitchTo Page
+
+
+type Page
+    = Home
+    | School
+    | Work
+    | Resume
+
+
+type alias Model =
+    { page : Page
+    , content : String
+    }
 
 
 
@@ -25,13 +41,13 @@ view model =
     div []
         [ div [ class "nav", id "header" ]
             [ ul []
-                [ li [ onClick Home ] [ text "Home" ]
-                , li [ onClick School ] [ text "School" ]
-                , li [ onClick Work ] [ text "Work" ]
-                , li [ onClick Resume ] [ text "Resume" ]
+                [ li [ onClick (SwitchTo Home), class (isActive Home model.page) ] [ text "Home" ]
+                , li [ onClick (SwitchTo School), class (isActive School model.page) ] [ text "School" ]
+                , li [ onClick (SwitchTo Work), class (isActive Work model.page) ] [ text "Work" ]
+                , li [ onClick (SwitchTo Resume), class (isActive Resume model.page) ] [ text "Resume" ]
                 ]
             ]
-        , article [] [ model.page ]
+        , article [] [ toHtml [] model.content ]
         ]
 
 
@@ -42,17 +58,32 @@ view model =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
+        SwitchTo newPage ->
+            ( { model | page = newPage, content = findContent newPage }, Cmd.none )
+
+
+findContent : Page -> String
+findContent page =
+    case page of
         Home ->
-            ( home, Cmd.none )
+            home
 
         School ->
-            ( school, Cmd.none )
+            school
 
         Work ->
-            ( work, Cmd.none )
+            work
 
         Resume ->
-            ( resume, Cmd.none )
+            resume
+
+
+isActive : Page -> Page -> String
+isActive page selectedPage =
+    if page == selectedPage then
+        "active"
+    else
+        ""
 
 
 

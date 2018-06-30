@@ -2,6 +2,7 @@
 import Home from '../index.html';
 import Css from '../css/screen.scss';
 import Image from '../signing-180x180.png';
+import Normalize from 'normalize.css';
 
 import Elm from './Main.elm';
 
