@@ -1,3 +1,5 @@
+$gold: #ffd700;
+
 .nav {
   font-family: 'Playfair Display SC', serif;
   font-size: 2em;
@@ -6,24 +8,27 @@
 
   ul {
     display: flex;
+    margin: 0;
   }
 
   li {
-    margin-left: 0.5em;
-    padding: 0.25em 0.5em;
     border-radius: 5px;
+    cursor: pointer;
     display: inline-block;
     list-style: none;
-    cursor: pointer;
+    margin-left: .5em;
+    padding: .25em .5em;
 
     &:first-child {
-      margin-left: 0em;
+      margin-left: 0;
     }
+
     &:hover {
-      background-color: gold;
+      background-color: $gold;
     }
+
     &.active {
-      background-color: gold;
+      background-color: $gold;
     }
   }
 }

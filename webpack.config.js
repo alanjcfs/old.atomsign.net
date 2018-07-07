@@ -3,7 +3,7 @@ var path = require("path");
 module.exports = {
   entry: {
     app: [
-      './src/index.js'
+      './index.js'
     ]
   },
 
@@ -15,25 +15,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(html)$/,
+        test: /\.html$/,
         exclude: /node_modules/,
         use: {
           loader: 'file-loader?name=[name].[ext]',
         }
       }, {
         test: /\.(css|scss)$/,
+        exclude: /node_modules/,
         use: [
           {
-            loader: 'style-loader',
+            loader: 'style-loader'
           },
           {
-            loader: 'css-loader',
-            options: {
-              importLoader: 1,
-            },
+            loader: 'css-loader'
           },
           {
-            loader: 'postcss-loader',
+            loader: 'postcss-loader'
           }
         ]
       }, {
@@ -45,11 +43,13 @@ module.exports = {
         }
       }, {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        exclude: /node_modules/,
         use: {
           loader: 'url-loader?limit=10000&mimetype=application/font-woff',
         }
       }, {
         test: /\.(ttf|eot|svg|png|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        exclude: /node_modules/,
         use: {
           loader: 'file-loader?name=[name].[ext]',
         }
