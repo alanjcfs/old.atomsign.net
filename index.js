@@ -2,6 +2,12 @@
 
 import './css/screen.scss';
 import './index.html';
+import home from './pages/home.md';
+import school from './pages/school.md';
+import work from './pages/work.md';
+import resume from './pages/resume.md';
+import md from 'markdown-it';
+const markdown = md({ html: true });
 
 Vue.component('page-item', {
     props: ['page'],
@@ -22,22 +28,22 @@ window.addEventListener('load', function() {
                 {
                     id: 1,
                     title: 'Home',
-                    body: "<h1>Home</h1><p>This is me</p><p>I'm currently learning Elixir and VueJS.</p>",
+                    body: markdown.render(home),
                 },
                 {
                     id: 2,
                     title: 'School',
-                    body: '<h1>School</h1><p>I went to school for biochemistry and changed career to software engineering somehow.',
+                    body: markdown.render(school),
                 },
                 {
                     id: 3,
                     title: 'Work',
-                    body: '<h1>Work</h1><p>I currently work for Family Independence Initiative.</p><p>It uses Ruby on Rails and JavaScript.</p>',
+                    body: markdown.render(work),
                 },
                 {
                     id: 4,
                     title: 'Resume',
-                    body: 'Eventually, when I set up an Elixir server that will serve the page here.',
+                    body: markdown.render(resume),
                 }
             ]
         },

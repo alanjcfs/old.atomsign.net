@@ -21,6 +21,11 @@ module.exports = {
           loader: 'file-loader?name=[name].[ext]',
         }
       }, {
+        test: /\.md$/,
+        use: {
+          loader: 'raw-loader'
+        }
+      }, {
         test: /\.(css|scss)$/,
         exclude: /node_modules/,
         use: [
@@ -32,6 +37,13 @@ module.exports = {
           },
           {
             loader: 'postcss-loader'
+          }
+        ]
+      }, {
+        test: /\.(jpg|jpeg|png|gif)$/,
+        use: [
+          {
+            loader: 'file-loader'
           }
         ]
       }, {

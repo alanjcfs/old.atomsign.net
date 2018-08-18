@@ -1,5 +1,5 @@
 {
-  "name": "just-another-elm-project",
+  "name": "just-another-project",
   "version": "1.0.0",
   "description": "None",
   "main": "webpack.config.js",
@@ -13,6 +13,10 @@
     "normalize.css": "^7.0.0",
     "postcss-import": "^11.0.0",
     "postcss-nested": "^3.0.0",
+    "markdown-it": "^8.4.2",
+    "postcss-loader": "^2.1.5",
+    "precss": "^3.1.2",
+    "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^2.6.1",
