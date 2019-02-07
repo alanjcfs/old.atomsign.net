@@ -1,5 +1,6 @@
 'use strict';
 
+import 'bootstrap'
 import './css/screen.scss';
 import './index.html';
 import home from './pages/home.md';
