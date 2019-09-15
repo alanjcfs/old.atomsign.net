@@ -1,5 +1,7 @@
 <h1 class="heading-large">This is me.</h1>
 
-I'm a lifelong learner. I love expanding my mind.
+I'm deaf and a lifelong learner.
 
-I'm a web developer and software engineer.
+I started out learning Biochemistry before deciding the career track wasn't
+right for me.  I made a leap into programming as a career and have been enjoying
+it ever since!.
