@@ -1,5 +1,3 @@
-[Home](/)
-
 # Resume
 
 Check out my <a href="https://www.linkedin.com/in/alanfungschwarz">LinkedIn
