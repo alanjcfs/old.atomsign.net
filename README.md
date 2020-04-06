@@ -1,12 +1,10 @@
-<h1 class="heading-large">This is me.</h1>
+<h2 class="heading-medium">Alan</h2>
 
-<h2 class="heading-medium">Alan Fung-Schwarz</h2>
-
-I'm deaf and a lifelong learner.
+I'm deaf.
 
 I started out learning Biochemistry before deciding the laboratory career track
-wasn't right for me.  I made a leap into programming as a career and have been
-enjoying
-it ever since!
+wasn't right for me.  I leapt into programming and have been enjoying it ever
+since!
 
-![Me in France](./me-at-la-galerie.jpeg)
+I plan to get a cochlear implant; I had planned to in April, but COVID-19 has
+delayed that indefinitely.
