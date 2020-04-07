@@ -10,21 +10,23 @@ const IndexPage = () => (
     <SEO description="An introduction to Alan"  title="Home" />
     <h1>Hey.</h1>
     <p>
-      I'm weird.
+      I'm deaf.
     </p>
     <p>
       I studied Biochemistry before making the jump into programming. I took a
       few CS courses, wrangled with the computers, and now I'm here.
     </p>
+    <p>
+      I was supposed to get a cochlear implant this year (2020), but the coronavirus, SARS-CoV-2, which causes COVID-19 ARDS disease in some people, interrupted my plans, as it did practically everyone else.
+    </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
     <p>
-      No, I'm not in Paris.
+      I was in Paris in July 2019, before the COVID era, standing on top of La Galerie overlooking the city of Paris and the famous Eiffel Tower.
     </p>
     <p>
-      As of 6 Apr 2020, it the time of the coronavirus. I live in San
-      Francisco; I grew up in East Bay.
+      I live in San Francisco; I grew up in East Bay.
     </p>
     <Link to="/page-2/">Next</Link>
   </Layout>
