@@ -17,7 +17,7 @@ const IndexPage = () => (
       few CS courses, wrangled with the computers, and now I'm here.
     </p>
     <p>
-      I was supposed to get a cochlear implant this year (2020), but the coronavirus, SARS-CoV-2, which causes COVID-19 ARDS disease in some people, interrupted my plans, as it did practically everyone else.
+      I was supposed to get a <Link to="/cochlear-implant/">cochlear implant</Link> this year (2020), but the coronavirus, SARS-CoV-2, which causes COVID-19 ARDS disease in some people, interrupted my plans, as it did practically everyone else.
     </p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
