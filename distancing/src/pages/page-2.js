@@ -33,6 +33,12 @@ const Page2 = () => (
       it meant to have that name, which makes me unique, but also makes me feel
       different; I have a name that confuses people.
     </p>
+    <p>
+      I was supposed to get a{" "}
+      <Link to="/cochlear-implant/">cochlear implant</Link> this year (2020),
+      but the coronavirus, SARS-CoV-2, which causes COVID-19 ARDS disease in
+      some people, interrupted my plans, as it did practically everyone else.
+    </p>
     <Link to="/">Home</Link>
   </Layout>
 )
