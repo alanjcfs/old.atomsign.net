@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Atom. Code. Sign.',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -34,16 +34,12 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: '2020',
+        link: '/2020/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'AtomSign',
+        link: 'https://www.atomsign.net'
       }
     ],
     sidebar: {
