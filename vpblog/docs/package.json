@@ -1,0 +1,19 @@
+{
+  "name": "vpblog",
+  "version": "0.0.1",
+  "description": "Deaf CI User",
+  "main": "index.js",
+  "authors": {
+    "name": "Alan Fung-Schwarz",
+    "email": "alan@atomsign.net"
+  },
+  "repository": "atomsign.net/vpblog",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
