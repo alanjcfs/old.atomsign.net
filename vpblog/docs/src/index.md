@@ -1,9 +1,9 @@
 ---
 home: true
 # heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: Deaf CI User
+tagline: Deaf. New CI Implantee.
 actionText: Start reading →
-actionLink: /2020/
+actionLink: /posts/
 # features:
 # - title: First Blog Post
 #   details: Feature 1 Description

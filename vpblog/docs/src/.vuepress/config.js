@@ -34,26 +34,15 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: '2020',
-        link: '/2020/',
+        text: 'Posts',
+        link: '/posts/',
       },
       {
         text: 'AtomSign',
         link: 'https://www.atomsign.net'
       }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    sidebar: {}
   },
 
   /**
