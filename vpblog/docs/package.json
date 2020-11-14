@@ -1,0 +1,21 @@
+{
+  "name": "vpblog",
+  "version": "0.0.1",
+  "description": "A Deaf Blogger",
+  "main": "index.js",
+  "authors": {
+    "name": "Alan Fung-Schwarz",
+    "email": "alan@atomsign.net"
+  },
+  "repository": "atomsign.net/vpblog",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "vuepress": "^1.5.3"
+  }
+}

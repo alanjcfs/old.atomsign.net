@@ -1,11 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "atomsign.net",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Alan's site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Alan Fung-Schwarz",
   "dependencies": {
     "gatsby": "^2.20.12",
+    "gatsby-cli": "^2.11.11",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
@@ -19,6 +20,8 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
